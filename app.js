@@ -4,6 +4,7 @@ const path = require('path');
 
 //chamada de arquivos
 const routes = require(path.resolve(__dirname, 'routes.js'));
+const { demoMidd } = require(path.resolve(__dirname, 'src', 'middlewares', 'globalsMiddleware.js'));// cahamda com desestruturação de objeto
 
 //criação de variaveis
 const app = express();
@@ -14,6 +15,7 @@ app.use(express.urlencoded({ extended: true })); //Habilita o recebimento de est
 app.use(express.static(path.resolve(__dirname, 'public')));//Habilita o uso das páginas estáticas apartir da pasta public
 
 //uso de middlewares criados no projeto OBS : os middlewares globais, deverão sempre ser adicionados antes das rotas, para que a ordem de execução e consequentemente o bom funcionamento ocorra
+app.use(demoMidd);
 app.use(routes);
 
 //view engine
