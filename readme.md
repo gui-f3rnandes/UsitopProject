@@ -1,5 +1,7 @@
 # Projeto Usi Top:
 
+Index: public/index.html
+
 **Obs: ppesquisar minificador ou plugin para css, pesquisar e calcular usos de mongodb ou mysql/mariadb, financeiramente e ou tecnicamente, considerando curva de aprendizado e deadline do projeto.**
 
 Estive documentando, e e qui está uma explicação básica para nos comunicarmos internamente, deveriamos pensar tambem em como organizar a documentação, por momento deixarei as documentações e contextos aplicaveis das ferramentas que estão sendo utilizadas como dependencias tanto do projeto quanto para desenvolvimento :
